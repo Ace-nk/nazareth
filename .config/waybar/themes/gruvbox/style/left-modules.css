@@ -1,0 +1,43 @@
+.modules-left > widget:first-child > #workspaces {
+    padding-left: 16px;
+}
+
+#workspaces button {
+    padding: 1 1px;
+    background-color: transparent;
+    color: @inactive-f1;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: @hover-f1;
+      box-shadow: none;
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: none;
+}
+
+#workspaces button.active {
+    background-color: transparent;
+    color: @main-f1;
+}
+
+#workspaces button.urgent {
+    background-color: transparent;
+   color: @m-red;
+}
+
+
+#workspaces {
+}
+#workspaces label {
+  font-size: 13px;
+}
+
+#clock {
+   color: @main-f1;
+   font-size: 13px;
+   background-color: transparent;
+}
