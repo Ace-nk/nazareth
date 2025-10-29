@@ -15,5 +15,6 @@ export WEBKIT_DISABLE_DMABUF_RENDERER=0
 
 # Created by `pipx` on 2025-10-22 04:00:50
 export PATH="$PATH:/home/Ace/.local/bin"
+export PATH="$PATH:/home/Ace/.cargo/bin"
 
 export TERMINAL="/usr/bin/kitty"
