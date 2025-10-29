@@ -1,0 +1,15 @@
+configuration {
+   display-drun: "󰆌  Apps";
+   display-window: "󱂬  Window";
+   display-run: "  Run";
+   drun-display-format: "{icon} {name}";
+   font: 'SpaceMono Nerd Font 12';
+   modi: "run,drun,window";
+   show-icons: true;
+   modes: "window,drun,run";
+   window-thumbnail: true;
+   sidebar-mode: true;
+   terminal: "kitty";
+}
+
+@theme ".config/rofi/themes/gruvbox.rasi"

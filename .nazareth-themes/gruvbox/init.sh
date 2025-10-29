@@ -26,7 +26,13 @@ sed -i '3c\"~/.config/waybar/themes/gruvbox/config/config.jsonc"' $HOME/.config/
 sed -i '1c\@import "themes/gruvbox/style/style.css";' $HOME/.config/waybar/style.css
 
 killall waybar
-waybar & disown
+#waybar & disown
+
+############
+### ROFI ###
+############
+
+sed -i '15c\@theme ".config/rofi/themes/gruvbox.rasi"' $HOME/.config/rofi/config.rasi
 
 ############
 ### Swww ###
@@ -34,3 +40,5 @@ waybar & disown
 swww-daemon & disown
 
 exec $HOME/.nazareth-themes/gruvbox/swww/wallinit.sh
+
+

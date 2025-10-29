@@ -1,0 +1,61 @@
+*{
+   main-b1: rgba(50,50,50,0.7);
+   main-f1: rgb(235,219,178);
+
+   selected-f1: rgb(255, 113, 61);
+   m-red: rgb(239, 65, 49);
+   m-blue: rgb(69, 133, 136);
+   m-green: rgb(120, 175, 110);
+   m-yellow: #fabd2f;
+   m-white: rgb(251, 241, 199);
+   m-black: rgb(30,33,30);
+   
+   background-color: transparent;
+   color: @main-f1;
+   border: 0;
+   margin: 0;
+   padding: 0;
+   spacing: 0;
+}
+
+window{
+   background-color: @main-b1;
+   width: 30%;
+   height: 33%;
+   border-color: @main-f1;
+   border: 0 2 2 0px;
+}
+
+mainbox {
+   margin: 15 15 0 15px;
+}
+inputbar {
+   padding: 0 0 20 0px;
+}
+
+prompt {
+   background-color: @main-f1;
+   color: @main-b1;
+   padding: 5 12px;
+   border-radius: 3px;
+}
+entry {
+   margin: 5 0 0 18px;
+}
+
+listview {
+   padding: 0 0 -4 5px;
+}
+element {
+   margin: 3 0 0 0px;
+}
+   element-text selected {
+   text-color: @selected-f1;
+}
+textbox {
+   margin: 15px;
+}
+
+mode-switcher {
+   margin: 15 -45 15 -45px;
+}
