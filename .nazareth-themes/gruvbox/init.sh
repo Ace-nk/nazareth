@@ -4,11 +4,8 @@
 ### Hyprland ###
 ################
 
-unlink $HOME/.config/hypr/animation.conf
-unlink $HOME/.config/hypr/style.conf
-
-ln -s $HOME/.nazareth-themes/gruvbox/hyprland/animation.conf $HOME/.config/hypr
-ln -s $HOME/.nazareth-themes/gruvbox/hyprland/style.conf $HOME/.config/hypr
+sed -i "1c\source = ~/.config/hypr/themes/gruvbox/style.conf" $HOME/.config/hypr/theme.conf
+sed -i '2c\source = ~/.config/hypr/themes/gruvbox/animation.conf' $HOME/.config/hypr/theme.conf
 
 hyprctl reload
 
@@ -16,9 +13,8 @@ hyprctl reload
 ### Kitty ###
 #############
 
-unlink $HOME/.config/kitty/current-theme.conf
+sed -i '5c\include themes/gruvbox.conf' $HOME/.config/kitty/kitty.conf
 
-ln -s $HOME/.nazareth-themes/gruvbox/kitty/current-theme.conf $HOME/.config/kitty
 
 pkill -SIGUSR1 kitty
 
