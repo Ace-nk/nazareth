@@ -1,0 +1,48 @@
+*{
+   main-b1: rgba(17, 14, 31,0.7);
+   main-f1: #eba0ac;
+
+   selected-f1:  #f38ba8;
+   m-red:  #f38ba8;
+   m-blue:  #89b4fa;
+   m-green: #a6e3a1;
+   m-yellow: #f9e2af;
+   m-white: #cdd6f4;
+   m-black:  #11111b;
+   m-border: rgba(51, 33, 64,1);
+   background-color: transparent;
+
+   color: @m-white;
+   orientation: vertical;
+}
+entry{
+}
+listview{
+}
+window {
+   height: 930;
+   width: 20%;
+   lenght: 20%;
+   fixed-height: false;
+   location: west; 
+   anchor: west;
+}
+inputbar {
+   enabled: false;
+}
+element-text{
+   enabled: false;
+}
+element {
+   margin: 12 12 12 12px;
+   padding: -72 0 -72 5px;
+   fixed-height: true;
+}
+element-icon {
+   enabled:true;
+   size: 34%;
+}
+element selected{
+   border: 2px;
+   border-color: @main-f1;
+}

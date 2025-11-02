@@ -60,8 +60,7 @@ sed -i '7c\theme = "catppuccin"' $HOME/.config/nvim/lua/plugins/lualine.lua
 ############
 swww-daemon & disown
 
-sed -i '11c\$wallswitch = $HOME/.nazareth-themes/catppuccin/swww/wallinit.sh' $HOME/.config/hypr/keybinds.conf
-
+sed -i '10c\dir="$HOME/.nazareth-themes/catppuccin/swww/wallpapers"' $HOME/.nazareth-themes/scripts/wallpaper-switcher.sh
 exec $HOME/.nazareth-themes/catppuccin/swww/wallinit.sh
 
 

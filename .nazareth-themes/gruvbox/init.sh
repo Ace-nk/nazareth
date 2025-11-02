@@ -61,9 +61,6 @@ sed -i '7c\theme = "gruvbox"' $HOME/.config/nvim/lua/plugins/lualine.lua
 ############
 ### Swww ###
 ############
-swww-daemon & disown
 
-sed -i '11c\$wallswitch = $HOME/.nazareth-themes/gruvbox/swww/wallinit.sh' $HOME/.config/hypr/keybinds.conf
+sed -i '10c\dir="$HOME/.nazareth-themes/gruvbox/swww/wallpapers"' $HOME/.nazareth-themes/scripts/wallpaper-switcher.sh
 exec $HOME/.nazareth-themes/gruvbox/swww/wallinit.sh
-
-
