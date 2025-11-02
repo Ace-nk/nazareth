@@ -1,6 +1,6 @@
 configuration {
    display-drun: "󰆌  Apps";
-   display-window: "󱂬  Window";
+   display-window: "  Windows";
    display-run: "  Run";
    drun-display-format: "{icon} {name}";
    font: 'SpaceMono Nerd Font 12';
@@ -12,4 +12,4 @@ configuration {
    terminal: "kitty";
 }
 
-@theme ".config/rofi/themes/gruvbox.rasi"
+@theme "~/.config/rofi/themes/catppuccin.rasi"

@@ -1,0 +1,69 @@
+#!/bin/bash
+
+################
+### Hyprland ###
+################
+
+sed -i "1c\source = ~/.config/hypr/themes/gruvbox/style.conf" $HOME/.config/hypr/theme.conf
+sed -i '2c\source = ~/.config/hypr/themes/gruvbox/animation.conf' $HOME/.config/hypr/theme.conf
+
+hyprctl reload
+
+###########
+### GTK ###
+###########
+
+gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Dark"
+
+#############
+### Kitty ###
+#############
+
+sed -i '5c\include themes/gruvbox.conf' $HOME/.config/kitty/kitty.conf
+
+
+pkill -SIGUSR1 kitty
+
+##############
+### Waybar ###
+##############
+
+sed -i '3c\"~/.config/waybar/themes/gruvbox/config/config.jsonc"' $HOME/.config/waybar/config.jsonc
+sed -i '1c\@import "themes/gruvbox/style/style.css";' $HOME/.config/waybar/style.css
+
+killall waybar
+waybar & disown
+
+###############
+### FIREFOX ###
+###############
+
+
+sed -i '2c\   --bg: #1a1a1a;' $HOME/.mozilla/firefox/3xc9zapl.Ace/chrome/userContent.css
+sed -i '3c\   --fg: #ebdbb2;' $HOME/.mozilla/firefox/3xc9zapl.Ace/chrome/userContent.css
+
+############
+### ROFI ###
+############
+
+sed -i '15c\@theme "~/.config/rofi/themes/gruvbox.rasi"' $HOME/.config/rofi/config.rasi
+
+
+##############
+### NEOVIM ###
+##############
+
+
+sed -i '4c\vim.cmd("colorscheme gruvbox")' $HOME/.config/nvim/init.lua
+sed -i '7c\theme = "gruvbox"' $HOME/.config/nvim/lua/plugins/lualine.lua
+
+
+############
+### Swww ###
+############
+swww-daemon & disown
+
+sed -i '11c\$wallswitch = $HOME/.nazareth-themes/gruvbox/swww/wallinit.sh' $HOME/.config/hypr/keybinds.conf
+exec $HOME/.nazareth-themes/gruvbox/swww/wallinit.sh
+
+

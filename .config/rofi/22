@@ -1,0 +1,66 @@
+*{
+   main-b1: rgba(17, 14, 31,0.7);
+   main-f1:  #b4befe;
+
+   selected-f1:  #f38ba8;
+   m-red:  #f38ba8;
+   m-blue:  #89b4fa;
+   m-green: #a6e3a1;
+   m-yellow: #f9e2af;
+   m-white: #cdd6f4;
+   m-black:  #11111b;
+   m-border: rgba(51, 33, 64,1);
+
+   color: @m-white;
+   background-color: transparent;
+   border: 0;
+   margin: 0;
+   padding: 0;
+   spacing: 0;
+}
+inputbar {
+   enabled: false;
+}
+window{
+   width: 90px;
+   lenght: 90px;
+}
+listview {
+   orientation: vertical; 
+   fixed-height: false;
+}
+element-text {
+   // Make sure the text is centered below the icon
+   vertical-align: 0.5;
+   horizontal-align: 0.5;
+}
+element {
+   // Change orientation from the default (horizontal) to vertical
+   margin: 15px;
+   padding: 60 0px;
+
+   // Optional: Set a fixed size for each element/cell
+   // width: 100px;
+   // height: 100px; 
+}
+
+element-icon {
+   // Make the icon large and place it in the center
+   size: 64px; // Adjust this size to your preference
+   vertical-align: 0.5;
+   horizontal-align: 0.5;
+}
+
+
+element selected {
+   background-color: @main-f1;
+}
+element-text selected {
+   // Make sure the text is centered below the icon
+   vertical-align: 0.5;
+   color: @m-red;
+   horizontal-align: 0.5;
+}
+mode-switcher {
+   enabled: false;
+}

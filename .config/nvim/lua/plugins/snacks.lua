@@ -18,7 +18,9 @@ return {
                   { icon = " ", key = "g", desc = "Find Text", action = ":Telescope live_grep" },
                   { icon = " ", key = "r", desc = "Recent Files", action = ":Telescope oldfiles" },
                   { icon = " ", key = "s", desc = "Restore Session", section = "session" },
-                  { icon = "󰒲 ", key = "L", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
+                  { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
+                  { icon = "󰚰", key = "u", desc = "Update", action = ":Lazy update", enabled = package.loaded.lazy ~= nil },
+                  { icon = "", key = "c", desc = "Config", action = ":Neotree dir=~/.config/nvim", enabled = package.loaded.lazy ~= nil },
                   { icon = " ", key = "q", desc = "Quit", action = ":qa" },
                },
                header = [[
@@ -27,7 +29,7 @@ return {
 
                                                                        
       ████ ██████           █████      ██                        
-     ███████████             █████                                
+     ███████████             █████                                
      █████████ ███████████████████ ███   ███████████      
     █████████  ███    █████████████ █████ ██████████████      
    █████████ ██████████ █████████ █████ █████ ████ █████      

@@ -1,6 +1,6 @@
 {
    "include": [
-"~/.config/waybar/themes/gruvbox/config/config.jsonc"
+"~/.config/waybar/themes/catppuccin/config/config.jsonc"
    ]
 }
 

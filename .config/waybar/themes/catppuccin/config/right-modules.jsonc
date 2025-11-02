@@ -1,0 +1,74 @@
+{
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10,
+        // "icons": {
+        //   "blueman": "bluetooth",
+        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+        // }
+    },
+   "custom/separator": {
+      "format" : "|",
+      "interval": "once",
+      "tooltip": false
+   },
+
+   "group/misc": {
+      "orientation": "inherit",
+      "drawer": {
+         "transition-duration": 200,
+         "children-class" : "misc-modules",
+         "transition-top-to-bottom": false,
+      },
+      "modules": [
+         "custom/separator",
+         "tray",
+      ]
+   },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+      "format-icons": ["󰂎","󱊡", "󱊢", "󱊣"]
+    },
+   "group/audio": {
+      "orientation": "horizontal",
+      "drawer": {
+         "transition-duration": 300,
+         "children-class" : "audio-modules"
+      },
+      "modules": [
+         "pulseaudio#vol",
+         "pulseaudio/slider"
+      ]
+   },
+    "pulseaudio#mic" :{
+      "format": "{format_source}",
+
+        "format-source": "",
+        "format-source-muted": "",
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+},
+    "pulseaudio#vol": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%",
+      "transition-duration": 200,
+        "format-bluetooth": "󰂯 {volume}%",
+        "format-bluetooth-muted": "󰂲",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+   "pulseaudio/slider": {
+      "min": 0,
+      "max": 100,
+      "orientation": "horizontal"
+   }
+}

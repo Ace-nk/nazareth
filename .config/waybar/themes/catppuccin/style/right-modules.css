@@ -1,0 +1,90 @@
+.modules-right > widget:last-child > #misc {
+    padding-right: 9px;
+}
+
+#tray {
+    background-color: transparent;
+   color: @main-f1;
+      
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: transparent;
+    color: @m-red;
+}
+
+#battery {
+    background-color: transparent;
+    color: @m-green;
+   font-size: 13px;
+}
+
+#battery.charging, #battery.plugged {
+    color: @m-green;
+    background-color: transparent;
+}
+
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    background-color: transparent;
+    color: @m-red;
+}
+
+#pulseaudio.vol {
+   background-color: transparent;
+   transition: padding 0.2s ease, background-color 0.3s ease; 
+   color: @v-color;
+   margin-right: 3px;
+}
+#pulseaudio.mic {
+   color: @v-color;
+      padding: 4 4px;
+   transition: padding 0.2s ease, background-color 0.3s ease; 
+}
+#pulseaudio.mic.source-muted {
+   color: @m-red;
+   padding: 4 6px;
+}
+
+#pulseaudio.vol.muted {
+    background-color: transparent;
+    color: @m-red;
+   padding: 0 5px;
+   font-size: 16px;
+}
+#pulseaudio-slider {
+   background-image: none;
+    background-color: transparent;
+   min-width: 150px;
+}
+#pulseaudio-slider slider {
+   min-height: 0px; 
+    min-width: 0px; 
+    opacity: 0; 
+    background-image: none;
+    border: none;
+    box-shadow: none;
+   background-color: transparent;
+}
+#pulseaudio-slider trough {
+   background-image: none;
+   min-height: 8px;
+   background-color: rgb(87, 87, 80)
+}
+#pulseaudio-slider highlight {
+   min-height: 8px;
+   border-radius: 2px;
+   background-image: none;
+   background-color: #f5c2e7;
+}
+#pulseaudio:hover {
+    background-color: transparent;
+   color: @v-color;
+}
+

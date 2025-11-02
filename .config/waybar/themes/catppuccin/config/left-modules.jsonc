@@ -1,0 +1,25 @@
+{
+   "hyprland/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": true,
+      "warp-on-scroll": false,
+      "format": "{icon}",
+      "format-icons": {
+         "10": "",
+         "urgent": "",
+         "default": ""
+      },
+      "persistent-workspaces" : {
+         "eDP-1": [1,2,3,4,10] 
+      }
+   },
+   "clock": {
+      "format": "  {:%I:%M %p}",
+      "tooltop": false
+   },
+   "clock#date": {
+      "format": "  {:%Y-%m-%d}",
+      "tooltop": false
+   },
+
+}

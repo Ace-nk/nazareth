@@ -1,0 +1,63 @@
+*{
+   main-b1: rgba(17, 14, 31,0.7);
+   main-f1:  #b4befe;
+
+   selected-f1:  #f38ba8;
+   m-red:  #f38ba8;
+   m-blue:  #89b4fa;
+   m-green: #a6e3a1;
+   m-yellow: #f9e2af;
+   m-white: #cdd6f4;
+   m-black:  #11111b;
+   m-border: rgba(51, 33, 64,1);
+  
+   color: @m-white;
+   background-color: transparent;
+   border: 0;
+   margin: 0;
+   padding: 0;
+   spacing: 0;
+}
+
+window{
+   background-color: @main-b1;
+   width: 30%;
+   height: 30%;
+   border-color: @m-border;
+   border: 0.05em;
+   border-radius: 5px;
+}
+
+mainbox {
+   margin: 18 18 0 18px;
+}
+inputbar {
+   padding: 0 0 20 0px;
+}
+
+prompt {
+   background-color: @main-f1;
+   color: @main-b1;
+   padding: 5 12px;
+   border-radius: 3px;
+}
+entry {
+   margin: 5 0 0 18px;
+}
+
+listview {
+   padding: 0 0 -4 5px;
+}
+element {
+   margin: 3 0 0 0px;
+}
+   element-text selected {
+   text-color: @selected-f1;
+}
+textbox {
+   margin: 15px;
+}
+
+mode-switcher {
+   margin: 15 -45 15 -45px;
+}
