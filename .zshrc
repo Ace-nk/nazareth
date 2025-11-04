@@ -43,3 +43,5 @@ export PATH="$PATH:/home/Ace/.local/bin"
 export PATH="$PATH:/home/Ace/.cargo/bin"
 
 export TERMINAL="/usr/bin/kitty"
+
+fastfetch

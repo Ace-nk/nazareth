@@ -7,7 +7,7 @@ while ! swww query >/dev/null 2>&1; do
 done
 
 
-dir="$HOME/.nazareth-themes/catppuccin/swww/wallpapers"
+dir="$HOME/.nazareth-themes/gruvbox/swww/wallpapers"
 cd $dir
 wallpaper=""
 CURRENT_WALLPAPER_PATH=$(swww query | grep 'currently displaying:' | awk -F 'image: ' '{print $2}' | tr -d '[:space:]')
