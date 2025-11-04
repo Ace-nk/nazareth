@@ -46,7 +46,9 @@ sed -i '3c\   --fg: #ebdbb2;' $HOME/.mozilla/firefox/3xc9zapl.Ace/chrome/userCon
 ### ROFI ###
 ############
 
-sed -i '15c\@theme "~/.config/rofi/themes/gruvbox.rasi"' $HOME/.config/rofi/config.rasi
+sed -i '15c\@theme "~/.config/rofi/themes/gruvbox/gruvbox.rasi"' $HOME/.config/rofi/config.rasi
+sed -i '1c\@theme "~/.config/rofi/themes/gruvbox/colors.rasi"' $HOME/.config/rofi/custom/themeswitcher.rasi
+sed -i '1c\@theme "~/.config/rofi/themes/gruvbox/colors.rasi"' $HOME/.config/rofi/custom/wallpaperswitcher.rasi
 
 
 ##############

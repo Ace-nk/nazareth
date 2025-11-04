@@ -12,4 +12,4 @@ configuration {
    terminal: "kitty";
 }
 
-@theme "~/.config/rofi/themes/catppuccin.rasi"
+@theme "~/.config/rofi/themes/catppuccin/catppuccin.rasi"

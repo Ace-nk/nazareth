@@ -1,16 +1,6 @@
-*{
-   main-b1: rgba(17, 14, 31,0.7);
-   main-f1:  #b4befe;
+@import "~/.config/rofi/themes/catppuccin/colors.rasi"
 
-   selected-f1:  #f38ba8;
-   m-red:  #f38ba8;
-   m-blue:  #89b4fa;
-   m-green: #a6e3a1;
-   m-yellow: #f9e2af;
-   m-white: #cdd6f4;
-   m-black:  #11111b;
-   m-border: rgba(51, 33, 64,1);
-  
+*{
    color: @m-white;
    background-color: transparent;
    border: 0;

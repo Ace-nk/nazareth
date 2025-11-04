@@ -1,0 +1,14 @@
+*{
+   main-b1: rgba(50,50,50,0.7);
+   main-f1: rgb(235,219,178);
+   m-border: @main-f1;
+
+   m-orange: rgb(255, 113, 61);
+   m-red: rgb(239, 65, 49);
+   m-blue: rgb(69, 133, 136);
+   m-green: rgb(120, 175, 110);
+   m-yellow: #fabd2f;
+   m-white: rgb(251, 241, 199);
+   m-black: rgb(30,33,30);
+   selected-f1:  @m-orange;
+}

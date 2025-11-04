@@ -13,7 +13,7 @@ wallpaper=""
 CURRENT_WALLPAPER_PATH=$(swww query | grep 'currently displaying:' | awk -F 'image: ' '{print $2}' | tr -d '[:space:]')
 CURRENT_WALLPAPER_NAME=$(basename "$CURRENT_WALLPAPER_PATH")
 
-wallpaper=$(for a in *; do echo -en "$a\0icon\x1f$a\n" ; done | rofi -dmenu -i -theme "~/.config/rofi/custom/wallpaperswitcher.rasi")
+wallpaper=$(for a in *.jpg *.png; do echo -en "$a\0icon\x1f$a\n" ; done | rofi -dmenu -i -lines 4 -theme "~/.config/rofi/custom/wallpaperswitcher.rasi")
 
 if [[ $wallpaper == $CURRENT_WALLPAPER_NAME ]]; then
    notify-send -t 2000 "Wallpaper already selected"

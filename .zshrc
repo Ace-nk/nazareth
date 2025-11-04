@@ -1,5 +1,4 @@
 # Created by newuser for 5.9
-
 alias ns='sshpass -p '958640' ssh etnk@192.168.0.166'
 alias hyprconfig='nvim ~/.config/hypr'
 alias pc='./.local/share/applications/Pseudo'

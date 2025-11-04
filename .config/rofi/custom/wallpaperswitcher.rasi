@@ -1,31 +1,26 @@
+@theme "~/.config/rofi/themes/catppuccin/colors.rasi"
+
 *{
-   main-b1: rgba(17, 14, 31,0.7);
-   main-f1: #eba0ac;
-
-   selected-f1:  #f38ba8;
-   m-red:  #f38ba8;
-   m-blue:  #89b4fa;
-   m-green: #a6e3a1;
-   m-yellow: #f9e2af;
-   m-white: #cdd6f4;
-   m-black:  #11111b;
-   m-border: rgba(51, 33, 64,1);
-   background-color: transparent;
-
    color: @m-white;
    orientation: vertical;
+   background-color: transparent;
 }
 entry{
 }
 listview{
+   margin: 5 0 0 0px;
 }
 window {
+   background-color: @main-b1;
    height: 930;
    width: 20%;
    lenght: 20%;
    fixed-height: false;
    location: west; 
    anchor: west;
+   border-color: @m-border;
+   border: 0.05em;
+   border-radius: 2px;
 }
 inputbar {
    enabled: false;
@@ -35,14 +30,14 @@ element-text{
 }
 element {
    margin: 12 12 12 12px;
-   padding: -72 0 -72 5px;
+   padding: -72 0 -72 0px;
    fixed-height: true;
 }
 element-icon {
    enabled:true;
-   size: 34%;
+   size: 348;
 }
 element selected{
-   border: 2px;
-   border-color: @main-f1;
+   border-color: @selected-f1;
+   border: 0.15em;
 }
