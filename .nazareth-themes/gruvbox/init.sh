@@ -59,6 +59,19 @@ sed -i '1c\@theme "~/.config/rofi/themes/gruvbox/colors.rasi"' $HOME/.config/rof
 sed -i '4c\vim.cmd("colorscheme gruvbox")' $HOME/.config/nvim/init.lua
 sed -i '7c\theme = "gruvbox"' $HOME/.config/nvim/lua/plugins/lualine.lua
 
+###########
+### ZSH ###
+###########
+
+sed -i '2c\local user_host="%B%(!.%{$fg[red]%}.%{$fg[default]%})%n@%m%{$reset_color%} "' $HOME/.oh-my-zsh/custom/themes/ace-nazareth.zsh-theme
+sed -i '4c\local current_dir="%B%{$fg[white]%}%~ %{$reset_color%}"' $HOME/.oh-my-zsh/custom/themes/ace-nazareth.zsh-theme
+
+
+
+sed -i '16c\ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}[%{$fg[default]%}"' $HOME/.oh-my-zsh/custom/themes/ace-nazareth.zsh-theme
+sed -i '17c\ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[white]%}] %{$reset_color%}"' $HOME/.oh-my-zsh/custom/themes/ace-nazareth.zsh-theme
+sed -i '18c\ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%} "' $HOME/.oh-my-zsh/custom/themes/ace-nazareth.zsh-theme
+sed -i '19c\ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[default]%} "' $HOME/.oh-my-zsh/custom/themes/ace-nazareth.zsh-theme
 
 ############
 ### Swww ###
