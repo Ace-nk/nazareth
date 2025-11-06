@@ -14,7 +14,7 @@ hyprctl reload
 ###########
 
 gsettings set org.gnome.desktop.interface gtk-theme "catppuccin-mocha-teal-standard+default"
-
+gsettings set org.gnome.desktop.interface icon-theme "Colloid-Pastel-Light"
 #############
 ### Kitty ###
 #############

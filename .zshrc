@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
+
 ZSH_THEME="ace-nazareth"
 
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
@@ -26,7 +27,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ns='sshpass -p '958640' ssh etnk@192.168.0.166'
 alias hyprconfig='nvim ~/.config/hypr'
-alias pc='./.local/share/applications/Pseudo'
+alias pc='~/.local/share/applications/Pseudo'
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -36,12 +37,15 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
 
+export XDG_SESSION_TYPE="wayland"
+export XDG_CURRENT_DESKTOP="Hyprland"
 export WEBKIT_DISABLE_DMABUF_RENDERER=0
 
 # Created by `pipx` on 2025-10-22 04:00:50
 export PATH="$PATH:/home/Ace/.local/bin"
 export PATH="$PATH:/home/Ace/.cargo/bin"
 
-export TERMINAL="/usr/bin/kitty"
 
-fastfetch
+if [ -n "$PS1" ]; then
+    fastfetch
+fi

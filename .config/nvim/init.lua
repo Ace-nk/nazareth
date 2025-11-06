@@ -1,7 +1,7 @@
 vim.lsp.enable('pyright')
 require("config.lazy")
 
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme catppuccin")
 
 vim.keymap.set({ "n", "c" }, "<C-c>", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
