@@ -15,7 +15,6 @@ hyprctl reload
 
 gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Dark"
 gsettings set org.gnome.desktop.interface icon-theme "Colloid-Pastel-Yellow"
-
 #############
 ### Kitty ###
 #############
