@@ -16,6 +16,9 @@ hyprctl reload
 gsettings set org.gnome.desktop.interface gtk-theme "catppuccin-mocha-teal-standard+default"
 gsettings set org.gnome.desktop.interface icon-theme "Colloid-Pastel-Light"
 
+nwg-look -x
+pgrep -x nautilus && (pkill -x nautilus; sleep 0.5; nautilus &)
+
 #############
 ### Kitty ###
 #############
@@ -46,7 +49,7 @@ sed -i '3c\   --fg:  #b4befe;' $HOME/.mozilla/firefox/3xc9zapl.Ace/chrome/userCo
 ### ROFI ###
 ############
 
-sed -i '15c\@theme "~/.config/rofi/themes/catppuccin/catppuccin.rasi"' $HOME/.config/rofi/config.rasi
+sed -i '16c\@theme "~/.config/rofi/themes/catppuccin/catppuccin.rasi"' $HOME/.config/rofi/config.rasi
 sed -i '1c\@theme "~/.config/rofi/themes/catppuccin/colors.rasi"' $HOME/.config/rofi/custom/themeswitcher.rasi
 sed -i '1c\@theme "~/.config/rofi/themes/catppuccin/colors.rasi"' $HOME/.config/rofi/custom/wallpaperswitcher.rasi
 

@@ -4,12 +4,13 @@ configuration {
    display-run: "  Run";
    drun-display-format: "{icon} {name}";
    font: 'SpaceMono Nerd Font 12';
-   modi: "run,drun,window";
+   modi: "run,drun,window,emoji";
    show-icons: true;
    modes: "window,drun,run";
    window-thumbnail: true;
    scroll-method: 1;
    terminal: "kitty";
+   sidebar-mode: true;
 }
 
 @theme "~/.config/rofi/themes/catppuccin/catppuccin.rasi"

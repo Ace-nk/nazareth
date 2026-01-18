@@ -15,6 +15,18 @@ hyprctl reload
 
 gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Dark"
 gsettings set org.gnome.desktop.interface icon-theme "Colloid-Pastel-Yellow"
+
+nwg-look -x
+
+./~/.nazareth-themes/scripts/nautilus-restart.sh
+
+pgrep -x nautilus && (pkill -x nautilus; sleep 0.5; nautilus &)
+#pgrep nautilus && (pkill nautilus; sleep 1; nautilus &)
+
+#ln -s /home/Ace/.themes/Gruvbox-Dark/gtk-4.0/gtk.css /home/Ace/.config/gtk-4.0/gtk.css
+#ln -s /home/Ace/.themes/Gruvbox-Dark/gtk-4.0/gtk-dark.css /home/Ace/.config/gtk-4.0/gtk-dark.css
+#ln -s /home/Ace/.themes/Gruvbox-Dark/gtk-4.0/assets /home/Ace/.config/gtk-4.0/assets
+
 #############
 ### Kitty ###
 #############
@@ -46,7 +58,7 @@ sed -i '3c\   --fg: #ebdbb2;' $HOME/.mozilla/firefox/3xc9zapl.Ace/chrome/userCon
 ### ROFI ###
 ############
 
-sed -i '15c\@theme "~/.config/rofi/themes/gruvbox/gruvbox.rasi"' $HOME/.config/rofi/config.rasi
+sed -i '16c\@theme "~/.config/rofi/themes/gruvbox/gruvbox.rasi"' $HOME/.config/rofi/config.rasi
 sed -i '1c\@theme "~/.config/rofi/themes/gruvbox/colors.rasi"' $HOME/.config/rofi/custom/themeswitcher.rasi
 sed -i '1c\@theme "~/.config/rofi/themes/gruvbox/colors.rasi"' $HOME/.config/rofi/custom/wallpaperswitcher.rasi
 
