@@ -87,4 +87,10 @@
     background-color: transparent;
    color: @main-f1;
 }
+#custom-quicknotifs {
+   background-color: transparent;
+   color:  @m-white;
+   padding-right: 22px;
+   font-size: 16px;
+}
 

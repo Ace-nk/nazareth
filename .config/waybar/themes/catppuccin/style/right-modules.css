@@ -87,4 +87,9 @@
     background-color: transparent;
    color: @v-color;
 }
-
+#custom-quicknotifs {
+   background-color: transparent;
+   color:  @m-white;
+   padding-right: 22px;
+   font-size: 16px;
+}

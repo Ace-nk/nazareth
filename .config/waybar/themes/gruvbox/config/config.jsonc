@@ -24,6 +24,7 @@
       "group/audio",
        "pulseaudio#mic",
         "group/misc",
+      "custom/quicknotifs"
     ],
     // Modules configuration
     "keyboard-state": {
